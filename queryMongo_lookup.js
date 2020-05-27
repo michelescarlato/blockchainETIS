@@ -5,11 +5,6 @@ const urlMongo = 'mongodb://localhost:27017/bigchain'
 var express = require('express');
 var app = express();
 var str = "";
-//queryMongo()
-
-var queryAge = {$sortByCount:"$data.Age"}
-var query = {$sortByCount:"$data.City"}
-
 
 var queryMongo = function(query1, query2, callback) {
 	MongoClient.connect(urlMongo, query1, query2, function(err, db) {
@@ -26,8 +21,7 @@ var queryMongo = function(query1, query2, callback) {
 
 var executeAggregateQuery = function(query1, query2, db, callback) {
 		const client = db.db();
-		const collection = client.collection('assets');
-				//collection.aggregate([{$match: {'data.Survey Type' : 'visitors' }},{$sortByCount :"$data.City"}]).toArray(function(err, docs) {
+		const collection = client.collection('assets');				
 				collection.aggregate([query1, query2]).toArray(function(err, docs) {
         callback(err, docs);
     });
