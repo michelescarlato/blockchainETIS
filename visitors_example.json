@@ -1,0 +1,53 @@
+{
+  "height": 700,
+  "transactions":
+  [{
+    "inputs": [{
+      "owners_before": ["9LjAjoKoS9R8ZzCydAC8GdeH7DS2MSGNrNU6mwEY26YR"],
+      "fulfills": null,
+      "fulfillment": "pGSAIHvrNc34NXuIAGSmJyqVr3niyN8J6SXcRgkDCGSj3l-KgUBa6NscP9X9SPTwFUyqurzavo7vY-9rcbrywqh0-28Lz-8fY3CoGlIxtqsfVumFbwGC8eaTiDe0lR0uLG3MHbAE"}],
+    "outputs": [{
+      "public_keys": ["9LjAjoKoS9R8ZzCydAC8GdeH7DS2MSGNrNU6mwEY26YR"],
+      "condition":{
+        "details":{
+            "type": "ed25519-sha-256",
+            "public_key": "9LjAjoKoS9R8ZzCydAC8GdeH7DS2MSGNrNU6mwEY26YR"
+          },
+        "uri": "ni:///sha-256;oII44kXoPz5bO3rEJFdkVB01kMfRvZlbTHmFav6tGxA?fpt=ed25519-sha-256&cost=131072"
+        },
+        "amount": "1"
+      }],
+    "operation": "CREATE",
+    "metadata": {
+      "what": "My first bigchaindb transaction TEST"
+    },
+    "asset": {
+      "data":{
+        "What is your country and city of residence?": "italy",
+        "Postcode": "09100",
+        "City": "Cagliari",
+        "Gender": "Male",
+        "Age": "25-49",
+        "overnight": false,
+        "If No, how many hours:": "6",
+        "did you from:": "Home",
+        "purpose:": ["Holiday"],
+        "how many:": "Alone",
+        "primary transport:": ["Motorcycle"],
+        "method transport here:": ["Motorcycle"],
+        "first time here:": true,
+        "main characteristics:": ["Historic interest"],
+        "spend per day:": "< 25 \u20ac",
+        "expenses:": "Within what was planned",
+        "disability or reduced mobility:": false,
+        "special needs:": "Neutral",
+        "sustainability efforts": false,
+        "special needs for disabilities:": "Neither Agree Nor Disagree ",
+        "highest degree:": "Doctoral",
+        "Professional status:": "I prefer not to answer",
+        "What category best describes your annual household income before tax?": "Low (under 30.000 euros)"
+        }
+      },
+    "version": "2.0", "id": "5341c967dda1080fab9a84540051633806fc3edadb1fa059e594d83c0052af6c"
+  }]
+}
