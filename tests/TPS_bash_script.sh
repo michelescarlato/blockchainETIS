@@ -8,8 +8,8 @@ node keypair_creation.js
 start=`date +%s.%N`
 while [ $x -le $COUNT ]
 do
-  node script_node1.js &
-  node script_node2.js &
+  node script_node1.js
+  node script_node2.js 
   node script_node3.js
   echo "Executed $x times"
   x=$(( $x + 1 ))

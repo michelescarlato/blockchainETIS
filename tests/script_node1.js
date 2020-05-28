@@ -11,11 +11,11 @@ let fs = require('fs')
 
 let filename_pubkey = "alice.pubkey"
 let alice_pubkey = fs.readFileSync(process.cwd() + "/" + filename_pubkey).toString()
-console.log("Public key " + alice_pubkey)
+//console.log("Public key " + alice_pubkey)
 
 let filename_privkey = "alice.privkey"
 let alice_privkey = fs.readFileSync(process.cwd() + "/" + filename_privkey).toString()
-console.log("Private key " + alice_privkey)
+//console.log("Private key " + alice_privkey)
 
 
 
