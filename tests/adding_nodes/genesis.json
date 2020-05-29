@@ -1,0 +1,59 @@
+{
+  "genesis_time": "2020-04-26T12:39:39.880502145Z",
+  "chain_id": "chain-surveys-db",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "validators": [
+    {
+      "address": "99FC3C3D9AF55C49F95529E0C867B2F4507A6098",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "qv1TE2rtz5o5p0pfkjJlFXhc5DXrVCz4vr6p9omQHa0="
+      },
+      "power": "10",
+      "name": "bigchaindb_server_1"
+    },
+    {
+      "address": "7BCA8B00B96C07147FA70CBD03395B42BE434B4F",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "rYcYSqTT9eFuFVsxUk1G+OdUuG+gnz3UAwasW6Vy9h0="
+      },
+      "power": "10",
+      "name": "bigchaindb_server_2"
+    },
+    {
+      "address": "CDA54D13EAFF33A9BEAACCFF1DAEFF532D2DF62E",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "gi+UckCXDdcj83T9gVLy2Ks7WxGqIASwcMJ5LjqsamE="
+      },
+      "power": "10",
+      "name": "bigchaindb_server_3"
+    },
+    {
+      "address": "7835550C9CB0AAC0B005A9F8BB9337EA46276A7B",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "2vSvxt7AeBH7vv7eTKKLjqTLoPMGY0We/zN1QEldjGo="
+      },
+      "power": "10",
+      "name": "bigchaindb_server_4"
+    }
+
+  ],
+  "app_hash": ""
+}
