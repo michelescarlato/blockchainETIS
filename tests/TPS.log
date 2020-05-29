@@ -7,7 +7,7 @@ Number of nodes: 3
 Elapsed time: 102.000000264
 Number of transactions: 150
 Throughput in terms of transactions per second: .68000000176000000000
- 
+
 Number of nodes: 3
 Elapsed time: 101.701484612
 Number of transactions: 150
@@ -43,3 +43,48 @@ Number of nodes: 3
 Elapsed time: 99.078802013
 Number of transactions: 150
 Throughput in terms of transactions per second: .66052534675333333333
+Number of nodes: 4
+Elapsed time: 103.842261072
+Number of transactions: 150
+Throughput in terms of transactions per second: .69228174048000000000
+ 
+Number of nodes: 4
+Elapsed time: 106.942468183
+Number of transactions: 150
+Throughput in terms of transactions per second: .71294978788666666666
+ 
+Number of nodes: 4
+Elapsed time: 104.446707866
+Number of transactions: 150
+Throughput in terms of transactions per second: .69631138577333333333
+ 
+Number of nodes: 4
+Elapsed time: 107.174136709
+Number of transactions: 150
+Throughput in terms of transactions per second: .71449424472666666666
+ 
+Number of nodes: 4
+Elapsed time: 102.560959350
+Number of transactions: 150
+Throughput in terms of transactions per second: .68373972900000000000
+ 
+Number of nodes: 4
+Elapsed time: 105.853615778
+Number of transactions: 150
+Throughput in terms of transactions per second: .70569077185333333333
+ 
+Number of nodes: 4
+Elapsed time: 105.848272740
+Number of transactions: 150
+Throughput in terms of transactions per second: .70565515160000000000
+ 
+Number of nodes: 4
+Elapsed time: 103.909128332
+Number of transactions: 150
+Throughput in terms of transactions per second: .69272752221333333333
+ 
+Number of nodes: 4
+Elapsed time: 103.695251632
+Number of transactions: 150
+Throughput in terms of transactions per second: .69130167754666666666
+ 
