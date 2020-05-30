@@ -1,5 +1,5 @@
 #!/bin/bash
-nodes=5
+nodes=7
 x=1
 COUNT=50
 
@@ -8,8 +8,11 @@ node keypair_creation.js
 start=`date +%s.%N`
 while [ $x -le $COUNT ]
 do
+  # Alice key
   node script_node1.js
+  # Bob key
   node script_node2.js
+  # Chris key
   node script_node3.js
   echo "Executed $x times"
   x=$(( $x + 1 ))
