@@ -13,7 +13,7 @@ IP=$FIRST_IP
 
 VM_ROOT="bigchaindb_server_"
 
-NUMBER=10
+NUMBER=7
 
 for (( c=1; c<=$NUMBER; c++ ))
 do
