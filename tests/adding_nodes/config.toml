@@ -8,7 +8,7 @@
 proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = "bigchaindb_server_4"
+moniker = "bigchaindb_server_5"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
@@ -145,7 +145,8 @@ seeds = ""
 persistent_peers = "1d220111ed10bf7d08b4e55ef197d8e71197dacb@192.168.100.125:26656,\
 d071e9a8587545f1fa989bf384608bd02578cb21@192.168.100.126:26656,\
 95413fe327c3a463d09f928c93b8a3d8a428b99d@192.168.100.127:26656,\
-a14277ecd087f36f854048ba48b7e36c9ebd31ca@192.168.100.128:26656"
+a14277ecd087f36f854048ba48b7e36c9ebd31ca@192.168.100.128:26656,\
+a1a7e7defdde7af30eb55daf27f270c93f2c9d41@192.168.100.129:26656"
 
 # UPNP port forwarding
 upnp = false
