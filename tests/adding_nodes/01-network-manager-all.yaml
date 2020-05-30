@@ -2,7 +2,7 @@
 network:
  ethernets:
   enp0s3:
-   addresses: [192.168.100.131/24]
+   addresses: [192.168.100.134/24]
    gateway4: 192.168.100.254
    dhcp4: true
    optional: true

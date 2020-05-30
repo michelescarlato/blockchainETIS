@@ -1,5 +1,5 @@
 #!/bin/bash
-nodes=7
+nodes=10
 x=1
 COUNT=50
 
