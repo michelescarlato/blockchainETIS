@@ -1,0 +1,19 @@
+{
+  "name": "blockchain_etis_visualization",
+  "version": "1.0.0",
+  "description": "Visualization of graphs",
+  "main": "graph.html",
+  "dependencies": {
+    "base-x": "^3.0.4",
+    "bigchaindb-driver": "^4.1.0",
+    "bip39": "^2.5.0",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
