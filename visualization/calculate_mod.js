@@ -1,12 +1,19 @@
-function Calculate(Parameter, Indicator, query) {
-//query arriva come parametro da graph, in questo caso sto lavorando su queryGender. Bisogna capire come passarlo tramite la GET, e fargli fare poi il match
+function Calculate(Parameter, Indicator, querySortByCount) {
+//query arriva come parametro da graph, in questo caso sto lavorando su queryGender.
+// Bisogna capire come passarlo tramite la GET, e fargli fare poi il match
 // dentro l'endpoint, dove ovviamente queryGender e' definita.
-// Pensare poi come selezionare il tipo di survey.
+// DOPO Pensare poi come selezionare il tipo di survey.
 const xhttp = new XMLHttpRequest();
 const MainEndpoint = "http://localhost:3000/"
-//xhttp.open("GET", "http://localhost:3000/"+Parameter, false);
-xhttp.open("POST", "http://localhost:3000/", false);
-xhttp.send();
+
+const queryMatch = document.querySelector('meta[name="description"]').content;
+console.log (queryMatch);
+
+var params = "querySortByCount="+querySortByCount+"&queryMatch="+queryMatch+"";
+
+xhttp.open("GET", "http://localhost:3000"+"?"+params, false);
+console.log("GET", "http://localhost:3000"+"?"+params)
+xhttp.send(null);
 
 const response = JSON.parse(xhttp.responseText);
 var obj = JSON.stringify(response, null, 2)

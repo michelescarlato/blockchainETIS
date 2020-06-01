@@ -7,8 +7,9 @@ function myFunctionETIS() {
 function myFunctionSDA() {
   const Parameter = $('#mySelectSDA').val().split(',')[0];
   const Indicator = $('#mySelectSDA').val().split(',')[1];
-  const query = $('#mySelectSDA').val().split(',')[2];
-  Calculate(Parameter, Indicator, query);
+  const querySortByCount = $('#mySelectSDA').val().split(',')[2];
+  console.log(querySortByCount)
+  Calculate(Parameter, Indicator, querySortByCount);
 }
 
 function myFunctionCRG() {
