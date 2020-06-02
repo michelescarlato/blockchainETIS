@@ -64,6 +64,15 @@ app.get('/', function(req, res, next) {
 		/*other three types of surveys*/
 
 		switch(querySortByCount){
+			//ETIS
+			case 'queryDisabilityConsiderations':
+				querySortByCount = {$sortByCount:"$data.Disability considerations"};
+				break;
+			case 'querySatisfaction':
+				querySortByCount = {$sortByCount:"$data.Overall Satisfaction"};
+				break;
+
+			//socio demographic
 			case 'queryCity':
 				querySortByCount = {$sortByCount :"$data.City"};
 				break;
@@ -72,15 +81,6 @@ app.get('/', function(req, res, next) {
 				break;
 			case 'queryGender':
 				querySortByCount = {$sortByCount :"$data.Gender"};
-				break;
-			case 'queryDisabilityConsiderations':
-				querySortByCount = {$sortByCount:"$data.Disability considerations"};
-				break;
-			case 'querySatisfaction':
-				querySortByCount = {$sortByCount:"$data.Overall Satisfaction"};
-				break;
-			case 'queryPurpose':
-				querySortByCount = {$sortByCount :"$data.Purpose"};
 				break;
 			case 'queryHighestDegree':
 				querySortByCount = {$sortByCount :"$data.Highest Degree"};
@@ -91,13 +91,15 @@ app.get('/', function(req, res, next) {
 			case 'queryAnnualHousehold':
 				querySortByCount = {$sortByCount :"$data.Purpose"};
 				break;
+
+			//contributions
+			case 'queryPurpose':
+				querySortByCount = {$sortByCount :"$data.Purpose"};
+				break;
 			case 'queryInterestingFeatures':
 				querySortByCount = {$sortByCount :"$data.Purpose"};
 				break;
 			}
-
-
-//definire una if (req.parameter == 'value'){esegui queryMongo con determinate parametri}
     queryMongo(queryMatch, querySortByCount, function(err, data) {
         if(err)
             res.status(500).json({error: err});

@@ -77,7 +77,7 @@
       <select id="mySelectETIS">
         <option value=""></option>
         <option value="OverallSatisfaction, A.2.1 ETIS Indicator: Percentage of tourists and same-day visitors that are satisfied with their overall experience in the destination,querySatisfaction">A.2.1 ETIS Indicator: Percentage of tourists and same-day visitors that are satisfied with their overall experience in the destination</option>
-        <option value="DisabilityConsiderations, A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts,">A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts</option>
+        <option value="DisabilityConsiderations, A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts,queryDisabilityConsiderations">A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts</option>
       </select>
       <input type="button" onclick="myFunctionETIS();this.form.reset()" value="Calculate"><p>
     </form>
@@ -88,9 +88,9 @@
         <option value="Cities,Cities Indicator,queryCity">Cities</option>
         <option value="Age, Age Indicator,queryAge">Age</option>
         <option value="Gender, Gender Indicator,queryGender">Gender</option>
-        <option value="HighestDegree, Highest Degree Indicator,">Highest Degree</option>
-        <option value="ProfessionalStatus, Professional Status Indicator">Professional Status</option>
-        <option value="AnnualHousehold, Annual Household Indicator">Annual Household</option>
+        <option value="HighestDegree, Highest Degree Indicator,queryHighestDegree">Highest Degree</option>
+        <option value="ProfessionalStatus, Professional Status Indicator,queryProfessionalStatus">Professional Status</option>
+        <option value="AnnualHousehold, Annual Household Indicator,queryAnnualHousehold">Annual Household</option>
       </select>
       <input type="button" onclick="myFunctionSDA();this.form.reset()" value="Calculate"><p>
     </form>
@@ -98,8 +98,8 @@
     <form>Contributions from the research group:
       <select id="mySelectCRG">
         <option value=""></option>
-        <option value="Purpose, Travel reason Indicator">Travel reason </option>
-        <option value="InterestingFeatures, Interesting Features Indicator" >Interesting Features</option>
+        <option value="Purpose, Travel reason Indicator,queryPurpose">Travel reason </option>
+        <option value="InterestingFeatures, Interesting Features Indicator,queryInterestingFeatures" >Interesting Features</option>
       </select>
       <input type="button" onclick="myFunctionCRG();this.form.reset()" value="Calculate">
     </form>
