@@ -1,7 +1,9 @@
 function myFunctionETIS() {
   const Parameter = $('#mySelectETIS').val().split(',')[0];
   const Indicator = $('#mySelectETIS').val().split(',')[1];
-  Calculate(Parameter, Indicator);
+  const querySortByCount = $('#mySelectETIS').val().split(',')[2];
+  console.log(querySortByCount)
+  Calculate(Parameter, Indicator, querySortByCount);
 }
 
 function myFunctionSDA() {
@@ -15,5 +17,7 @@ function myFunctionSDA() {
 function myFunctionCRG() {
   const Parameter = $('#mySelectCRG').val().split(',')[0];
   const Indicator = $('#mySelectCRG').val().split(',')[1];
-  Calculate(Parameter, Indicator);
+  const querySortByCount = $('#mySelectCRG').val().split(',')[2];
+  console.log(querySortByCount)
+  Calculate(Parameter, Indicator, querySortByCount);
 }
