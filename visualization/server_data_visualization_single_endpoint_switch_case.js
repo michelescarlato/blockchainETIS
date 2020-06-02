@@ -44,6 +44,7 @@ app.get('/', function(req, res, next) {
 
 		var querySortByCount = req.query.querySortByCount;
 		console.log(req.query.querySortByCount);
+		console.log(querySortByCount);
 
 		switch(queryMatch){
 			case 'visitors':
@@ -100,7 +101,8 @@ app.get('/', function(req, res, next) {
 				querySortByCount = {$sortByCount :"$data.Purpose"};
 				break;
 			}
-    queryMongo(queryMatch, querySortByCount, function(err, data) {
+		console.log(JSON.stringify(querySortByCount));
+		queryMongo(queryMatch, querySortByCount, function(err, data) {
         if(err)
             res.status(500).json({error: err});
         else
