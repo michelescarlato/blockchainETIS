@@ -1,7 +1,7 @@
 #!/bin/bash
-nodes=7
+nodes=3
 x=1
-COUNT=50
+COUNT=5
 
 node keypair_creation.js
 
@@ -21,10 +21,10 @@ end=`date +%s.%N`
 #timestamp
 runtime=$( echo "$end - $start" | bc -l )
 RESULT=$(echo "$runtime/($COUNT*3)" | bc -l)
-touch TPS.log
-echo "Number of nodes: "$nodes >> TPS.log
-echo "Elapsed time: "$runtime >> TPS.log
+touch TPS_${nodes}_nodes.log
+echo "Number of nodes: "$nodes >> TPS_${nodes}_nodes.log.log.log
+echo "Elapsed time: "$runtime >> TPS_${nodes}_nodes.log
 TRANSACTIONS=$(($COUNT*3))
-echo "Number of transactions: "$TRANSACTIONS >> TPS.log
-echo "Throughput in terms of transactions per second: "$RESULT >> TPS.log
-echo " " >> TPS.log
+echo "Number of transactions: "$TRANSACTIONS >> TPS_${nodes}_nodes.log
+echo "Throughput in terms of transactions per second: "$RESULT >> TPS_${nodes}_nodes.log
+echo " " >> TPS_${nodes}_nodes.log
