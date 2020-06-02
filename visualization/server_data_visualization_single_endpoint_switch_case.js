@@ -59,8 +59,8 @@ app.get('/', function(req, res, next) {
 				queryMatch = {$match: {'data.Survey Type' : 'municipalities' }};
 				break;
 		}
-		if(queryMatch=="visitors")
-		queryMatch = {$match: {'data.Survey Type' : 'visitors' }};
+		//if(queryMatch=="visitors")
+		//queryMatch = {$match: {'data.Survey Type' : 'visitors' }};
 		/*other three types of surveys*/
 
 		switch(querySortByCount){
@@ -73,11 +73,11 @@ app.get('/', function(req, res, next) {
 			case 'queryGender':
 				querySortByCount = {$sortByCount :"$data.Gender"};
 				break;
-			case 'querySatisfaction':
-				querySortByCount = {$sortByCount:"$data.Overall Satisfaction"};
-				break;
 			case 'queryDisabilityConsiderations':
 				querySortByCount = {$sortByCount:"$data.Disability considerations"};
+				break;
+			case 'querySatisfaction':
+				querySortByCount = {$sortByCount:"$data.Overall Satisfaction"};
 				break;
 			case 'queryPurpose':
 				querySortByCount = {$sortByCount :"$data.Purpose"};

@@ -1,120 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Data Visualization</title>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
-<meta name="description" content="visitors">
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="calculate_mod.js"></script>
-<script src="myFunctions_mod.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <head>
+    <title>Data Visualization</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="description" content="visitors">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="calculate_mod.js"></script>
+    <script src="myFunctions_mod.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: red;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+    </div>
+    <h3>Indicators visualized from a blockchain</h3>
+    <form>ETIS indicators:
+      <select id="mySelectETIS">
+        <option value=""></option>
+        <option value="OverallSatisfaction, A.2.1 ETIS Indicator: Percentage of tourists and same-day visitors that are satisfied with their overall experience in the destination,querySatisfaction">A.2.1 ETIS Indicator: Percentage of tourists and same-day visitors that are satisfied with their overall experience in the destination</option>
+        <option value="DisabilityConsiderations, A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts,">A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts</option>
+      </select>
+      <input type="button" onclick="myFunctionETIS();this.form.reset()" value="Calculate"><p>
+    </form>
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    <form>Socio-demographic aspects:
+      <select id="mySelectSDA">
+        <option value=""></option>
+        <option value="Cities,Cities Indicator,queryCity">Cities</option>
+        <option value="Age, Age Indicator,queryAge">Age</option>
+        <option value="Gender, Gender Indicator,queryGender">Gender</option>
+        <option value="HighestDegree, Highest Degree Indicator,">Highest Degree</option>
+        <option value="ProfessionalStatus, Professional Status Indicator">Professional Status</option>
+        <option value="AnnualHousehold, Annual Household Indicator">Annual Household</option>
+      </select>
+      <input type="button" onclick="myFunctionSDA();this.form.reset()" value="Calculate"><p>
+    </form>
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+    <form>Contributions from the research group:
+      <select id="mySelectCRG">
+        <option value=""></option>
+        <option value="Purpose, Travel reason Indicator">Travel reason </option>
+        <option value="InterestingFeatures, Interesting Features Indicator" >Interesting Features</option>
+      </select>
+      <input type="button" onclick="myFunctionCRG();this.form.reset()" value="Calculate">
+    </form>
 
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-</div>
-<h3>Indicators visualized from a blockchain</h3>
-
-<form>
-  ETIS indicators:
-  <select id="mySelectETIS">
-    <option value=""></option>
-    <option value="OverallSatisfaction, A.2.1 ETIS Indicator: Percentage of tourists and same-day visitors that are satisfied with their overall experience in the destination">A.2.1 ETIS Indicator: Percentage of tourists and same-day visitors that are satisfied with their overall experience in the destination</option>
-    <option value="DisabilityConsiderations, A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts">A.4.1 ETIS Indicator: The percentage of visitors who note that they are aware of destination sustainability efforts</option>
-  </select>
-<input type="button" onclick="myFunctionETIS();this.form.reset()" value="Calculate">
-<p>
-<form>
-  Socio-demographic aspects:
-  <select id="mySelectSDA">
-    <option value=""></option>
-    <option value="Cities,Cities Indicator,queryCity">Cities</option>
-    <option value="Age, Age Indicator,queryAge">Age</option>
-    <option value="Gender, Gender Indicator,queryGender">Gender</option>
-    <option value="HighestDegree, Highest Degree Indicator">Highest Degree</option>
-    <option value="ProfessionalStatus, Professional Status Indicator">Professional Status</option>
-    <option value="AnnualHousehold, Annual Household Indicator">Annual Household</option>
-  </select>
-<input type="button" onclick="myFunctionSDA();this.form.reset()" value="Calculate"><p>
-<form>
-  Contributions from the research group:
-  <select id="mySelectCRG">
-    <option value=""></option>
-    <option value="Purpose, Travel reason Indicator">Travel reason </option>
-    <option value="InterestingFeatures, Interesting Features Indicator" >Interesting Features</option>
-  </select>
-<input type="button" onclick="myFunctionCRG();this.form.reset()" value="Calculate">
-
-</form>
-<div id='graph'>
-</div>
-</body>
+    <div id='graph'>
+    </div>
+  </body>
 </html>
