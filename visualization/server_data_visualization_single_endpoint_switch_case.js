@@ -60,9 +60,6 @@ app.get('/', function(req, res, next) {
 				queryMatch = {$match: {'data.Survey Type' : 'municipalities' }};
 				break;
 		}
-		//if(queryMatch=="visitors")
-		//queryMatch = {$match: {'data.Survey Type' : 'visitors' }};
-		/*other three types of surveys*/
 
 		switch(querySortByCount){
 			//ETIS
@@ -72,7 +69,6 @@ app.get('/', function(req, res, next) {
 			case 'querySatisfaction':
 				querySortByCount = {$sortByCount:"$data.Overall Satisfaction"};
 				break;
-
 			//socio demographic
 			case 'queryCity':
 				querySortByCount = {$sortByCount :"$data.City"};
@@ -87,18 +83,17 @@ app.get('/', function(req, res, next) {
 				querySortByCount = {$sortByCount :"$data.Highest Degree"};
 				break;
 			case 'queryProfessionalStatus':
-				querySortByCount = {$sortByCount :"$data.Purpose"};
+				querySortByCount = {$sortByCount :"$data.Professional Status"};
 				break;
 			case 'queryAnnualHousehold':
-				querySortByCount = {$sortByCount :"$data.Purpose"};
+				querySortByCount = {$sortByCount :"$data.Annual Household"};
 				break;
-
 			//contributions
 			case 'queryPurpose':
 				querySortByCount = {$sortByCount :"$data.Purpose"};
 				break;
 			case 'queryInterestingFeatures':
-				querySortByCount = {$sortByCount :"$data.Purpose"};
+				querySortByCount = {$sortByCount :"$data.Interesting Features"};
 				break;
 			}
 		console.log(JSON.stringify(querySortByCount));
