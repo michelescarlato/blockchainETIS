@@ -19,4 +19,11 @@ The following components are required:
 - Tendermint 0.31.5 ,
 - Node.js 
 
-# 1.Backend
+This demonstrator has been developed using Ubuntu 18.04.
+
+## 1.Backend
+To install BigchainDB the steps indicated [here] (http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html).
+
+To install MongoDB:
+
+
