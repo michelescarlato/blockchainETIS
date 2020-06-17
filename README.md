@@ -19,4 +19,4 @@ The following components are required:
 - Tendermint 0.31.5 ,
 - Node.js 
 
-#1. Backend
+# 1.Backend
