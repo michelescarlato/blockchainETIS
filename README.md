@@ -20,10 +20,20 @@ The following components are required:
 This demonstrator has been developed using Ubuntu 18.04.
 
 ## 1.Backend
+
+### Bigchaindb
 To install BigchainDB the steps indicated [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html), avoiding the usage of NGINX.
 
-To install MongoDB:
 
+### MongoDB
+To check if the version in the repository is correct:
+
+```bash
+
+apt-cache policy mongodb
+```
+After verifying that is the correct one, to install it:
+To install MongoDB:
 ```bash
 
 sudo apt install mongodb
@@ -31,6 +41,13 @@ sudo apt install mongodb
 
 To check if mongodb is running:
 
+```bash
 systemctl status mongodb
+```
 
+
+
+```bash
+
+```
 
