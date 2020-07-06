@@ -15,7 +15,7 @@ The following components are required:
 - BigchainDB 2.2.1,
 - MongoDB 3.4 or newer,
 - Tendermint 0.31.5 ,
-- Node.js 
+- Node.js. 
 
 This demonstrator has been developed using Ubuntu 18.04.
 
@@ -99,5 +99,37 @@ As explained [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-
 ```bash
 bigchaindb-monit-config  
 ```
+
+
+## 2.Frontend
+
+## Data entry: survey compilation
+
+To complete the Survey we create our forms on [SurveyJS.io](https://surveyjs.io), and we use the related SurveyID.
+
+In [data_entry/survey_and_transaction.js](https://github.com/michelescarlato/blockchainETIS/blob/master/data_entry/survey_and_transaction.js) it is shown the  surveyID value that identify our survey administered to Tourists.
+
+The Javascript code shown [here](https://github.com/michelescarlato/blockchainETIS/blob/master/data_entry/survey_and_transaction.js) is called inside [data_entry/index.html](https://github.com/michelescarlato/blockchainETIS/blob/master/data_entry/index.html), and through that code the data are inserted in the blockchain in JSON format.
+
+## Graphical visualization
+
+To visualize the data inserted in the blockchain, we used a node.js application installed on one of the nodes.
+
+To install node.js:
+```bash
+sudo apt install npm
+```
+
+These packages are required by our application:
+
+```bash
+npm install bigchaindb-driver@4.1.0
+npm install base-x@3.0.4
+npm install bip39@2.5.0
+npm install mongodb@3.0.4
+npm install express -–save
+npm install jquery
+```
+
 
 
