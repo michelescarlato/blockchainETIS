@@ -1,4 +1,4 @@
-# blockchainETIS
+# Blockchain based Tourism Indicator System
 
 
 This is an early version of a demonstrator of BigchainDB based architecture, which is used as a permissioned blockchain.
