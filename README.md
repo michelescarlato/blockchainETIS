@@ -82,7 +82,7 @@ unzip tendermint_v0.31.5_linux_amd64.zip
 mv the directory to /usr/local/bin
 
 ```bash
-sudo mv tenderming  /usr/local/bin
+sudo mv tendermint  /usr/local/bin
 ```
 
 
