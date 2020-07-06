@@ -103,7 +103,7 @@ bigchaindb-monit-config
 
 ## 2.Frontend
 
-## Data entry: survey compilation
+### Data entry: survey compilation
 
 To complete the Survey we create our forms on [SurveyJS.io](https://surveyjs.io), and we use the related SurveyID.
 
@@ -111,7 +111,7 @@ In [data_entry/survey_and_transaction.js](https://github.com/michelescarlato/blo
 
 The Javascript code shown [here](https://github.com/michelescarlato/blockchainETIS/blob/master/data_entry/survey_and_transaction.js) is called inside [data_entry/index.html](https://github.com/michelescarlato/blockchainETIS/blob/master/data_entry/index.html), and through that code the data are inserted in the blockchain in JSON format.
 
-## Graphical visualization
+### Graphical visualization
 
 To visualize the data inserted in the blockchain, we used a node.js application installed on one of the nodes.
 
@@ -131,5 +131,10 @@ npm install express -–save
 npm install jquery
 ```
 
+This is the [package.json](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/package.json) file.
 
 
+The code of our node.js application can be found [here](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/server_data_visualization_single_endpoint_switch_case.js).
+
+
+To interact with the node.js application there are 2 Javascripts files, [calculate.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/calculate_mod.js) and [myFunctions.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/myFunctions_mod.js), that are loaded into a [html page](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/graph_mod.html).
