@@ -22,7 +22,28 @@ This demonstrator has been developed using Ubuntu 18.04.
 ## 1.Backend
 
 ### Bigchaindb
-To install BigchainDB the steps indicated [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html), avoiding the usage of NGINX.
+To install BigchainDB please follow the steps indicated [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html), avoiding the usage of NGINX.
+
+These are the steps performed to install the version 2.2.1:
+
+1.Installing pip for python3:
+```bash
+
+sudo apt install python3-pip
+```
+2. use pip3 to install bigchaindb
+
+```bash
+
+sudo pip3 install bigchaindb==2.2.1
+```
+ configure bigchaindb running:
+ 
+
+```bash
+
+bigchaindb configure
+```
 
 
 ### MongoDB
@@ -47,7 +68,36 @@ systemctl status mongodb
 
 
 
-```bash
+### Tendermint 
 
+To install tendermint we also installed unzip.
+```bash
+sudo apt install unzip
 ```
+
+then we used wget to download the tendermint zip file.
+```bash
+unzip tendermint_v0.31.5_linux_amd64.zip
+```
+mv the directory to /usr/local/bin
+
+```bash
+sudo mv tenderming  /usr/local/bin
+```
+
+
+### Monit
+
+Monit is used to run and monitor tendermint and bigchaindb. It will restart them if they crashed.
+
+```bash
+sudo apt install monit
+```
+
+As explained [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/network-setup.html), you will be able to run the bigchaindb-monit-config script, which will be in your PATH. Running the script is required to build a configuration file for Monit:
+
+```bash
+bigchaindb-monit-config  
+```
+
 
