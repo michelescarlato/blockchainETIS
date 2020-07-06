@@ -100,6 +100,12 @@ As explained [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-
 bigchaindb-monit-config  
 ```
 
+To run monit:
+
+```bash
+monit -d 1
+```
+
 
 ## 2.Frontend
 
