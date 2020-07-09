@@ -12,7 +12,9 @@ Each
 Here is some videos of the experiments:
 
 
-[5 nodes](https://youtu.be/iTG-pQst41w)
+[![5 nodes](https://i9.ytimg.com/vi/iTG-pQst41w/mq2.jpg?sqp=CLTimvgF&rs=AOn4CLA7WkYPJ6SdVjgM78KfUod28y7njg)](https://youtu.be/iTG-pQst41w)
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iTG-pQst41w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
