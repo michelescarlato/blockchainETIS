@@ -22,7 +22,7 @@ This demonstrator has been developed using Ubuntu 18.04.
 ## 1.Backend
 
 ### Bigchaindb
-To install BigchainDB please follow the steps indicated [here](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html), avoiding the usage of NGINX.
+To install BigchainDB please follow the steps indicated in [1], avoiding the usage of NGINX.
 
 These are the steps performed to install the version 2.2.1:
 
@@ -84,7 +84,12 @@ mv the directory to /usr/local/bin
 ```bash
 sudo mv tendermint  /usr/local/bin
 ```
+Initialize it with
+```bash
+tendermint init
+```
 
+To allow members to connect each other is fundamental to configure the file config.toml as explained in [1]
 
 ### Monit
 
@@ -144,3 +149,7 @@ The code of our node.js application can be found [here](https://github.com/miche
 
 
 To interact with the node.js application there are 2 Javascripts files, [calculate.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/calculate_mod.js) and [myFunctions.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/myFunctions_mod.js), that are loaded into a [html page](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/graph_mod.html).
+
+
+#References
+1. [How to Set Up a BigchainDB Network](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html)
