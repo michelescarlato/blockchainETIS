@@ -16,9 +16,7 @@ Here is some videos of the experiments:
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iTG-pQst41w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-[10_nodes](https://youtu.be/Hq1FEb7H77E)
+[![10_nodes](https://i9.ytimg.com/vi/Hq1FEb7H77E/mq1.jpg?sqp=CLTimvgF&rs=AOn4CLBT3zndUJgU9Bmib7Bnp4dDPMqQrQ)](https://youtu.be/Hq1FEb7H77E)
 
 
