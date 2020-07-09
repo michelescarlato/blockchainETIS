@@ -12,11 +12,15 @@ Each
 Here is some videos of the experiments:
 
 5 nodes experiment:
+
+
 [![5 nodes](https://i9.ytimg.com/vi/iTG-pQst41w/mq2.jpg?sqp=CLTimvgF&rs=AOn4CLA7WkYPJ6SdVjgM78KfUod28y7njg)](https://youtu.be/iTG-pQst41w)
 
 
 
 10 nodes experiment:
+
+
 [![10_nodes](https://i9.ytimg.com/vi/Hq1FEb7H77E/mq1.jpg?sqp=CLTimvgF&rs=AOn4CLBT3zndUJgU9Bmib7Bnp4dDPMqQrQ)](https://youtu.be/Hq1FEb7H77E)
 
 
