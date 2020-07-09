@@ -7,7 +7,7 @@ The bash script is [TPS_bash_script.sh](https://github.com/michelescarlato/block
 
 This script mainly run JavaScript code using node.js and calculate the time elapsed to perform its execution.
 
-The number of repetition is set using the $COUNT variable. During each repetition 3 transactions are sent to 3 differents nodes, through the JavaScript code (script_node1.js)[https://github.com/michelescarlato/blockchainETIS/blob/master/tests/script_node1.js],
+The number of repetition is set using the $COUNT variable. During each repetition 3 transactions are sent to 3 differents nodes, through the JavaScript code [script_node1.js](https://github.com/michelescarlato/blockchainETIS/blob/master/tests/script_node1.js),
 [script_node2.js](https://github.com/michelescarlato/blockchainETIS/blob/master/tests/script_node2.js) and [script_node3.js](https://github.com/michelescarlato/blockchainETIS/blob/master/tests/script_node3.js).
 
 
