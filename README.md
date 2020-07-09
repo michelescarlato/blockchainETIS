@@ -151,5 +151,5 @@ The code of our node.js application can be found [here](https://github.com/miche
 To interact with the node.js application there are 2 Javascripts files, [calculate.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/calculate_mod.js) and [myFunctions.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/myFunctions_mod.js), that are loaded into a [html page](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/graph_mod.html).
 
 
-#References
+# References
 1. [How to Set Up a BigchainDB Network](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html)
