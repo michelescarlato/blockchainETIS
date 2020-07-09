@@ -17,6 +17,11 @@ Here is some videos of the experiments:
 [![5 nodes](https://i9.ytimg.com/vi/iTG-pQst41w/mq2.jpg?sqp=CLTimvgF&rs=AOn4CLA7WkYPJ6SdVjgM78KfUod28y7njg)](https://youtu.be/iTG-pQst41w)
 
 
+9 nodes shells:
+
+[![10_nodes](https://i9.ytimg.com/vi/ygX3ZFwnJD0/mq2.jpg?sqp=CLjpmvgF&rs=AOn4CLD3n-Y-bLRU2ooQYXyo_j1dlEX-Xg)](https://www.youtube.com/watch?v=ygX3ZFwnJD0)
+
+
 
 10 nodes experiment:
 
