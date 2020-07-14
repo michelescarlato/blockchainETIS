@@ -19,7 +19,7 @@ Each JavaScript script is run using one of these key pairs.
 
 
 
-Here is some videos of the experiments:
+Here are some videos of the experiments:
 
 5 nodes experiment:
 
