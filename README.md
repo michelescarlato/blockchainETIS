@@ -150,6 +150,31 @@ The code of our node.js application can be found [here](https://github.com/miche
 
 To interact with the node.js application there are 2 Javascripts files, [calculate.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/calculate_mod.js) and [myFunctions.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/myFunctions_mod.js), that are loaded into a [html page](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/graph_mod.html).
 
+## Experiments.
+In the test directory there are files used during the experiments, and a description of the test carried on.
+
+Here are some videos of the experiments:
+
+5 nodes experiment:
+
+
+[![5 nodes](https://i9.ytimg.com/vi/iTG-pQst41w/mq2.jpg?sqp=CLTimvgF&rs=AOn4CLA7WkYPJ6SdVjgM78KfUod28y7njg)](https://youtu.be/iTG-pQst41w)
+
+
+9 nodes shells:
+
+[![10_nodes](https://i9.ytimg.com/vi/ygX3ZFwnJD0/mq2.jpg?sqp=CLjpmvgF&rs=AOn4CLD3n-Y-bLRU2ooQYXyo_j1dlEX-Xg)](https://www.youtube.com/watch?v=ygX3ZFwnJD0)
+
+
+
+10 nodes experiment:
+
+
+[![10_nodes](https://i9.ytimg.com/vi/Hq1FEb7H77E/mq1.jpg?sqp=CLTimvgF&rs=AOn4CLBT3zndUJgU9Bmib7Bnp4dDPMqQrQ)](https://youtu.be/Hq1FEb7H77E)
+
+
+
+
 
 # References
 1. [How to Set Up a BigchainDB Network](http://docs.bigchaindb.com/projects/server/en/latest/simple-deployment-template/index.html)
