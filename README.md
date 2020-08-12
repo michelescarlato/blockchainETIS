@@ -7,7 +7,7 @@ The data entry is performed by connecting [SurveyJS](https://surveyjs.io/) to th
 
 The data visualization is provided via web browser using Plotly library.
 
-The plotted graph are retrieved by querying MongoDB.
+The plotted graphs are retrieved by querying MongoDB.
 
 The graphic representation is provided through a Node.js application, which makes use of Express.js as a middleware web framework to allow the communication between web browser and database.
 
@@ -147,7 +147,7 @@ This is the [package.json](https://github.com/michelescarlato/blockchainETIS/blo
 The code of our node.js application can be found [here](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/server_data_visualization_single_endpoint_switch_case.js).
 
 
-To interact with the node.js application there are 2 Javascripts files, [calculate.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/calculate_mod.js) and [myFunctions.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/myFunctions_mod.js), that are loaded into a [html page](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/graph_mod.html).
+To interact with the node.js application there are 2 Javascripts files, [calculate.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/calculate_mod.js) and [myFunctions.js](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/myFunctions_mod.js), that are loaded into an [html page](https://github.com/michelescarlato/blockchainETIS/blob/master/visualization/graph_mod.html).
 
 ## Experiments.
 In the test directory there are files used during the experiments, and a description of the test carried on.
