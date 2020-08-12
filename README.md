@@ -54,7 +54,6 @@ To check if the version in the repository is correct:
 apt-cache policy mongodb
 ```
 After verifying that is the correct one, to install it:
-To install MongoDB:
 ```bash
 
 sudo apt install mongodb
