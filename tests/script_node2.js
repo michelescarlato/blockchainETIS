@@ -17,11 +17,11 @@ let bob_privkey = fs.readFileSync(process.cwd() + "/" + filename_privkey).toStri
 //console.log("Private key " + bob_privkey)
 
 
-//const assetdata = { "What is your country and city of residence?": "France", "City": "Nice", "Gender": "Male", "Age": "25-49", "overnight": true, "how many nights": "3", "did you from:": "Home", "Purpose": [ "Holiday" ], "how many:": "Alone", "primary transport:": [ "Motorcycle" ], "method transport here:": [ "Motorcycle" ], "first time here:": true, "Interesting Features": [ "Beach facilities" ], "kind of accomodation:": "Hotel / Resort / Motel", "spend per day:": "25 - 50 €", "expenses:": //"Within what was planned", "disability or reduced mobility:": false, "special needs:": "Agree", "sustainability efforts": false, "Overall Satisfaction": "Agree", "Disability considerations": "Slightly Agree", "Highest Degree": "Bachelor’s degree", "Professional Status": "Self-employed", "Annual Household": "Medium (from 30.000 to 60.000 euros)", "Timestamp" : ""+timestamp+"", "Survey Type": "visitors" }
+const assetdata = { "What is your country and city of residence?": "France", "City": "Nice", "Gender": "Male", "Age": "25-49", "overnight": true, "how many nights": "3", "did you from:": "Home", "Purpose": [ "Holiday" ], "how many:": "Alone", "primary transport:": [ "Motorcycle" ], "method transport here:": [ "Motorcycle" ], "first time here:": true, "Interesting Features": [ "Beach facilities" ], "kind of accomodation:": "Hotel / Resort / Motel", "spend per day:": "25 - 50 €", "expenses:": "Within what was planned", "disability or reduced mobility:": false, "special needs:": "Agree", "sustainability efforts": false, "Overall Satisfaction": "Agree", "Disability considerations": "Slightly Agree", "Highest Degree": "Bachelor’s degree", "Professional Status": "Self-employed", "Annual Household": "Medium (from 30.000 to 60.000 euros)", "Timestamp" : ""+timestamp+"", "Survey Type": "visitors" }
 
 //const assetdata = { "Vote": "White" }
 
-const assetdata = { "What is your country and city of residence?": "France" }
+//const assetdata = { "What is your country and city of residence?": "France" }
 
 const metadata = {"what": "My first bigchaindb transaction TEST"}
 // Construct a transaction payload
