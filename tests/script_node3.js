@@ -20,7 +20,7 @@ const assetdata = { "What is your country and city of residence?": "Germany", "C
 
 //const assetdata = { "Vote": "White" }
 //const assetdata = { "What is your country and city of residence?": "France" }
-
+console.log(assetdata)
 
 const metadata = {"what": "My first bigchaindb transaction TEST"}
 // Construct a transaction payload
