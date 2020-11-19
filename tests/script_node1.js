@@ -1,6 +1,6 @@
 const driver = require('bigchaindb-driver')
 
-const API_PATH = 'http://192.168.100.125:9984/api/v1/'
+const API_PATH = 'http://128.163.232.68:9984/api/v1/'
 
 
 var date = new Date();
