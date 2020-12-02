@@ -1,7 +1,7 @@
 #!/bin/bash
 nodes=3
 x=1
-COUNT=33
+COUNT=333
 
 node keypair_creation.js
 
