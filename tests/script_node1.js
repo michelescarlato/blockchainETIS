@@ -24,7 +24,7 @@ let alice_privkey = fs.readFileSync(process.cwd() + "/" + filename_privkey).toSt
 
 //const assetdata = { "Vote": "White" }
 //const assetdata = { "What is your country and city of residence?": "France" }
-const assetdata = { "Vote": "White", "Token" : "+timestamp+""}
+const assetdata = { "Vote": "White", "Token" : ""+timestamp+""}
 const metadata = {"what": "My first bigchaindb transaction TEST"}
 // Construct a transaction payload
 const txCreateAliceSimple = driver.Transaction.makeCreateTransaction(
