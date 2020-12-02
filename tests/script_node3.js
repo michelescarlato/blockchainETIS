@@ -18,7 +18,7 @@ let chris_privkey = fs.readFileSync(process.cwd() + "/" + filename_privkey).toSt
 //let createTxId
 /*const assetdata = { "What is your country and city of residence?": "Germany", "City": "Berlin", "Gender": "Male", "Age": "50-64", "overnight": true, "how many nights": "4", "did you from:": "Home", "Purpose": [ "In transit" ], "how many:": "Alone", "primary transport:": [ "Caravan" ], "method transport here:": [ "Caravan" ], "first time here:": false, "If No, how many times:": "3", "When last visit:": "Last 12 months", "Interesting Features": [ "Beach facilities", "Peace and quiet" ], "kind of accomodation:": "Own property", "spend per day:": "< 25 €", "expenses:": "Within what was planned", "disability or reduced mobility:": false, "special needs:": "Neutral", "sustainability efforts": false, "Overall Satisfaction": "Slightly Agree", "Disability considerations": "Neither Agree Nor Disagree ", "Highest Degree": "High school graduate", "Professional Status": "Retired", "Annual Household": "Medium (from 30.000 to 60.000 euros)", "Timestamp" : ""+timestamp+""}//, "Survey Type": "visitors" }*/
 
-const assetdata = { "Vote": "White", "Token" : "213456098123475"}
+const assetdata = { "Vote": "White", "Token" : "+timestamp+""}
 //const assetdata = { "What is your country and city of residence?": "France" }
 //console.log(assetdata)
 
