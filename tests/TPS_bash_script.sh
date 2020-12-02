@@ -22,7 +22,7 @@ end=`date +%s.%N`
 runtime=$( echo "$end - $start" | bc -l )
 RESULT=$(echo "$runtime/($COUNT*3)" | bc -l)
 touch TPS_${nodes}_nodes.log
-echo "Number of nodes: "$nodes >> TPS_${nodes}_nodes.log.log.log
+echo "Number of nodes: "$nodes >> TPS_${nodes}_nodes.log
 echo "Elapsed time: "$runtime >> TPS_${nodes}_nodes.log
 TRANSACTIONS=$(($COUNT*3))
 echo "Number of transactions: "$TRANSACTIONS >> TPS_${nodes}_nodes.log
