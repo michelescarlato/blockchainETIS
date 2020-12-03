@@ -10,13 +10,13 @@ while [ $x -le $COUNT ]
 do
   # Alice key
   node script_node1.js &
-  sleep 0.3
+  sleep 0.2
   # Bob key
   node script_node2.js &
-  sleep 0.3
+  sleep 0.2
   # Chris key
   node script_node3.js &
-  sleep 0.3
+  sleep 0.2
   echo "Executed $x times"
   x=$(( $x + 1 ))
 done
