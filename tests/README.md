@@ -24,7 +24,7 @@ Here are some videos of the experiments:
 5 nodes experiment:
 
 
-[![5 nodes](https://youtu.be/iTG-pQst41w)](https://youtu.be/iTG-pQst41w)
+[https://youtu.be/iTG-pQst41w](https://youtu.be/iTG-pQst41w)
 
 
 9 nodes shells:
