@@ -29,7 +29,7 @@ Here are some videos of the experiments:
 
 9 nodes shells:
 
-[https://i9.ytimg.com/vi/ygX3ZFwnJD0/mq2.jpg?sqp=CLjpmvgF&rs=AOn4CLD3n-Y-bLRU2ooQYXyo_j1dlEX-Xg](https://www.youtube.com/watch?v=ygX3ZFwnJD0)
+[https://www.youtube.com/watch?v=ygX3ZFwnJD0](https://www.youtube.com/watch?v=ygX3ZFwnJD0)
 
 
 
