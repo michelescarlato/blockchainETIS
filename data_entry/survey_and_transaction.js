@@ -30,7 +30,7 @@ survey
 function sendTransatcionToBigChainDB (assetdata){
       // BigchainDB server instance or testnetwork (e.g. https://example.com/api/v1/)
       //const API_PATH = 'http://192.168.100.120:9984/api/v1/'
-      const API_PATH = 'http://localhost:9984/api/v1/'
+      const API_PATH = 'http://0.0.0.0:9984/api/v1/'
       // Create a new keypair for Alice and Bob
       const alice = new BigchainDB.Ed25519Keypair()
       let createTxId
