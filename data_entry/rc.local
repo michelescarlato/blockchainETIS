@@ -1,0 +1,6 @@
+#!/bin/sh -e
+# to move in /etc/ directory
+sh /root/sendIP.sh &
+cd /home/michelescarlato/blockchainETIS/data_entry/
+python3 -m http.server &
+exit 0
