@@ -133,7 +133,7 @@ sudo apt install npm
 These packages are required by our application:
 
 ```bash
-npm install bigchaindb-driver@4.1.0
+npm install bigchaindb-driver@4.2.0
 npm install base-x@3.0.4
 npm install bip39@2.5.0
 npm install mongodb@3.0.4
