@@ -21,7 +21,7 @@ survey
             var contenutoSurvey1 = JSON.stringify(result.data);
             contenutoSurveyAddedField = contenutoSurvey1.replace("}",", \"Survey Type\":\""+SurveyType+"\" }")
             console.log(contenutoSurveyAddedField);
-            contenutoSurvey = JSON.parse(contenutoSurvey1);
+            contenutoSurvey = JSON.parse(contenutoSurveyAddedField);
             sendTransatcionToBigChainDB(contenutoSurvey);
             return contenutoSurvey;
     }
