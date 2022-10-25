@@ -1,4 +1,7 @@
-# A Blockchain based Tourism Indicator System
+# BATDIV: A Blockchain-based Approach for Tourism Data Insertion and Visualization
+
+Paper presented at IEEE 2021 IoT Vertical and Topical Summit for Tourism.
+[https://ieeexplore.ieee.org/abstract/document/9604903](https://ieeexplore.ieee.org/abstract/document/9604903)
 
 
 This is an early version of a demonstrator of BigchainDB based architecture, which is used as a permissioned blockchain.
